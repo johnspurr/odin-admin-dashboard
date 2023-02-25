@@ -10,51 +10,56 @@
 <body>
   <nav class="navigation" aria-label="main">
     <header class="navigation__header"><img class="navigation__icon--large" src="images/view-dashboard.svg">Dashboard</header>
-    <ul class="navigation__list--top" role="group">
-      <li><img class="navigation__icon--small" src="images/home.svg">Home</li>
-      <li><img class="navigation__icon--small" src="images/account.svg">Profile</li>
-      <li><img class="navigation__icon--small" src="images/message-text.svg">Messages</li>
-      <li><img class="navigation__icon--small" src="images/clock-time-three.svg">History</li>
-      <li><img class="navigation__icon--small" src="images/note-multiple.svg">Tasks</li>
-      <li><img class="navigation__icon--small" src="images/account-group.svg">Communities</li>
+    <ul class="navigation__list--top no-bullets" role="group">
+      <li class="current-page"><a href="#"><img class="navigation__icon--small" src="images/home.svg">Home</a></li>
+      <li><a href="#"><img class="navigation__icon--small" src="images/account.svg">Profile</a></li>
+      <li><a href="#"><img class="navigation__icon--small" src="images/message-text.svg">Messages</a></li>
+      <li><a href="#"><img class="navigation__icon--small" src="images/clock-time-three.svg">History</a></li>
+      <li><a href="#"><img class="navigation__icon--small" src="images/note-multiple.svg">Tasks</a></li>
+      <li><a href="#"><img class="navigation__icon--small" src="images/account-group.svg">Communities</a></li>
     </ul>
-    <ul class="navigation__list--bottom" role="group">
-      <li><img class="navigation__icon--small" src="images/cog.svg">Settings</li>
-      <li><img class="navigation__icon--small" src="images/help-box.svg">Support</li>
-      <li><img class="navigation__icon--small" src="images/shield-check.svg">Privacy</li>
+    <ul class="navigation__list--bottom no-bullets" role="group">
+      <li><a href="#"><img class="navigation__icon--small" src="images/cog.svg">Settings</a></li>
+      <li><a href="#"><img class="navigation__icon--small" src="images/help-box.svg">Support</a></li>
+      <li><a href="#"><img class="navigation__icon--small" src="images/shield-check.svg">Privacy</a></li>
     </ul>
   </nav>
-  <header>
-    <div class="search">
-      <img class="search__icon" src="images/magnify.svg">
-      <input class="search__input">
-    </div>
-    <div class="notifications">
-      <img class="notifications__icon" src="images/bell-ring-outline.svg">
-    </div>
-    <div class="profile">
-      <img class="profile__avatar" src="">
-      <div class="profile__name">Admin Istrator</div>
-    </div>
-    <div class="welcome">
-      <img class="welcome__avatar" src="">
-      <div class="welcome__greeting">Hi there,</div>
-      <div class="welcome__name">Admin Istrator (@administrator)</div>
-    </div>
-    <div class="header__button-list">
-      <button class="header__button">New</button>
-      <button class="header__button">Upload</button>
-      <button class="header__button">Share</button>
-    </div>
+  <header class="header">
+    <section class="header__top"></div>
+      <div class="search">
+        <img class="search__icon" src="images/magnify.svg">
+        <input class="search__input">
+      </div>
+      <div class="notifications">
+        <img class="notifications__icon" src="images/bell-ring-outline.svg">
+      </div>
+      <div class="profile">
+        <img class="profile__avatar" src="images/avatar-1.jpg">
+        <div class="profile__name">Admin Istrator</div>
+      </div>
+    </section>
+    <section class="header__bottom">
+      <div class="welcome">
+        <img class="welcome__avatar" src="images/avatar-1.jpg">
+        <div class="welcome__greeting">Hi there,</div>
+        <div class="welcome__name">Admin Istrator (@administrator)</div>
+      </div>
+      <div class="header__button-list">
+        <button class="header__button">New</button>
+        <button class="header__button">Upload</button>
+        <button class="header__button">Share</button>
+      </div>
+
+    </section>
   </header>
-  <main>
+  <main class="main">
     <section id="projects">
       <h1>Your Projects</h1>
       <div class="card-container">
         <div class="card">
           <h2>Super Cool Project</h2>
-          <p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
-          <ul class="card__button-list" role="group">
+          <p class="card__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim.</p>
+          <ul class="card__button-list no-bullets" role="group">
             <li><button class="card__button" aria-label="favorite" title="Favorite"><img class="card__icon" src="images/star-plus-outline.svg" alt="Favorite"></button></li>
             <li><button class="card__button" aria-label="watch" title="Watch"><img class="card__icon" src="images/eye-plus-outline.svg" alt="Watch"></button></li>
             <li><button class="card__button" aria-label="share" title="Share"><img class="card__icon" src="images/share-variant.svg" alt="Share"></button></li>
@@ -62,47 +67,47 @@
         </div>        
         <div class="card">
           <h2>Less Cool Project</h2>
-          <p>Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
-          <ul class="card__button-list" role="group">
-            <button class="card__button" aria-label="favorite" title="Favorite"><img class="card__icon" src="images/star-plus-outline.svg" alt="Favorite"></button>
-            <button class="card__button" aria-label="watch" title="Watch"><img class="card__icon" src="images/eye-plus-outline.svg" alt="Watch"></button>
-            <button class="card__button" aria-label="share" title="Share"><img class="card__icon" src="images/share-variant.svg" alt="Share"></button>
+          <p class="card__description">Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo. Nullam dictum felis eu pede mollis pretium. Integer tincidunt. Cras dapibus. Vivamus elementum semper nisi. Aenean vulputate eleifend tellus.</p>
+          <ul class="card__button-list no-bullets" role="group">
+            <li><button class="card__button" aria-label="favorite" title="Favorite"><img class="card__icon" src="images/star-plus-outline.svg" alt="Favorite"></button></li>
+            <li><button class="card__button" aria-label="watch" title="Watch"><img class="card__icon" src="images/eye-plus-outline.svg" alt="Watch"></button></li>
+            <li><button class="card__button" aria-label="share" title="Share"><img class="card__icon" src="images/share-variant.svg" alt="Share"></button></li>
           </ul>
         </div>
         <div class="card">
           <h2>Impossible App</h2>
-          <p>Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
-          <ul class="card__button-list" role="group">
-            <button class="card__button" aria-label="favorite" title="Favorite"><img class="card__icon" src="images/star-plus-outline.svg" alt="Favorite"></button>
-            <button class="card__button" aria-label="watch" title="Watch"><img class="card__icon" src="images/eye-plus-outline.svg" alt="Watch"></button>
-            <button class="card__button" aria-label="share" title="Share"><img class="card__icon" src="images/share-variant.svg" alt="Share"></button>
+          <p class="card__description">Aenean leo ligula, porttitor eu, consequat vitae, eleifend ac, enim. Aliquam lorem ante, dapibus in, viverra quis, feugiat a, tellus. Phasellus viverra nulla ut metus varius laoreet. Quisque rutrum. Aenean imperdiet. Etiam ultricies nisi vel augue. Curabitur ullamcorper ultricies nisi. Nam eget dui.</p>
+          <ul class="card__button-list no-bullets" role="group">
+            <li><button class="card__button" aria-label="favorite" title="Favorite"><img class="card__icon" src="images/star-plus-outline.svg" alt="Favorite"></button></li>
+            <li><button class="card__button" aria-label="watch" title="Watch"><img class="card__icon" src="images/eye-plus-outline.svg" alt="Watch"></button></li>
+            <li><button class="card__button" aria-label="share" title="Share"><img class="card__icon" src="images/share-variant.svg" alt="Share"></button></li>
           </ul>
         </div>
         <div class="card">
           <h2>Easy Peasy App</h2>
-          <p>Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.</p>
-          <ul class="card__button-list" role="group">
-            <button class="card__button" aria-label="favorite" title="Favorite"><img class="card__icon" src="images/star-plus-outline.svg" alt="Favorite"></button>
-            <button class="card__button" aria-label="watch" title="Watch"><img class="card__icon" src="images/eye-plus-outline.svg" alt="Watch"></button>
-            <button class="card__button" aria-label="share" title="Share"><img class="card__icon" src="images/share-variant.svg" alt="Share"></button>
+          <p class="card__description">Etiam rhoncus. Maecenas tempus, tellus eget condimentum rhoncus, sem quam semper libero, sit amet adipiscing sem neque sed ipsum. Nam quam nunc, blandit vel, luctus pulvinar, hendrerit id, lorem. Maecenas nec odio et ante tincidunt tempus. Donec vitae sapien ut libero venenatis faucibus. Nullam quis ante.</p>
+          <ul class="card__button-list no-bullets" role="group">
+            <li><button class="card__button" aria-label="favorite" title="Favorite"><img class="card__icon" src="images/star-plus-outline.svg" alt="Favorite"></button></li>
+            <li><button class="card__button" aria-label="watch" title="Watch"><img class="card__icon" src="images/eye-plus-outline.svg" alt="Watch"></button></li>
+            <li><button class="card__button" aria-label="share" title="Share"><img class="card__icon" src="images/share-variant.svg" alt="Share"></button></li>
           </ul>
         </div>
         <div class="card">
           <h2>Ad Blocker</h2>
-          <p>Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.</p>
-          <ul class="card__button-list" role="group">
-            <button class="card__button" aria-label="favorite" title="Favorite"><img class="card__icon" src="images/star-plus-outline.svg" alt="Favorite"></button>
-            <button class="card__button" aria-label="watch" title="Watch"><img class="card__icon" src="images/eye-plus-outline.svg" alt="Watch"></button>
-            <button class="card__button" aria-label="share" title="Share"><img class="card__icon" src="images/share-variant.svg" alt="Share"></button>
+          <p class="card__description">Etiam sit amet orci eget eros faucibus tincidunt. Duis leo. Sed fringilla mauris sit amet nibh. Donec sodales sagittis magna. Sed consequat, leo eget bibendum sodales, augue velit cursus nunc, quis gravida magna mi a libero. Fusce vulputate eleifend sapien. Vestibulum purus quam, scelerisque ut, mollis sed, nonummy id, metus.</p>
+          <ul class="card__button-list no-bullets" role="group">
+            <li><button class="card__button" aria-label="favorite" title="Favorite"><img class="card__icon" src="images/star-plus-outline.svg" alt="Favorite"></button></li>
+            <li><button class="card__button" aria-label="watch" title="Watch"><img class="card__icon" src="images/eye-plus-outline.svg" alt="Watch"></button></li>
+            <li><button class="card__button" aria-label="share" title="Share"><img class="card__icon" src="images/share-variant.svg" alt="Share"></button></li>
           </ul>
         </div>
         <div class="card">
           <h2 class="card__title">Money Maker</h2>
           <p class="card__description">Nullam accumsan lorem in dui. Cras ultricies mi eu turpis hendrerit fringilla. Vestibulum ante ipsum primis in faucibus orci luctus et ultrices posuere cubilia Curae; In ac dui quis mi consectetuer lacinia. Nam pretium turpis et arcu. Duis arcu tortor, suscipit eget, imperdiet nec, imperdiet iaculis, ipsum. Sed aliquam ultrices mauris. Integer ante arcu, accumsan a, consectetuer eget, posuere ut, mauris. Praesent adipiscing. Phasellus ullamcorper ipsum rutrum nunc. Nunc nonummy metus. Vestibulum volutpat pretium libero. Cras id dui.</p>
-          <ul class="card__button-list" role="group">
-            <button class="card__button" aria-label="favorite" title="Favorite"><img class="card__icon" src="images/star-plus-outline.svg" alt="Favorite"></button>
-            <button class="card__button" aria-label="watch" title="Watch"><img class="card__icon" src="images/eye-plus-outline.svg" alt="Watch"></button>
-            <button class="card__button" aria-label="share" title="Share"><img class="card__icon" src="images/share-variant.svg" alt="Share"></button>
+          <ul class="card__button-list no-bullets" role="group">
+            <li><button class="card__button" aria-label="favorite" title="Favorite"><img class="card__icon" src="images/star-plus-outline.svg" alt="Favorite"></button></li>
+            <li><button class="card__button" aria-label="watch" title="Watch"><img class="card__icon" src="images/eye-plus-outline.svg" alt="Watch"></button></li>
+            <li><button class="card__button" aria-label="share" title="Share"><img class="card__icon" src="images/share-variant.svg" alt="Share"></button></li>
           </ul>
         </div>
       </div>
@@ -128,22 +133,22 @@
       <h1>Trending</h1>
       <div class="trending-container">
         <div class="trending__profile">
-          <img class="trending__avatar" src="">
+          <img class="trending__avatar" src="images/avatar-2.jpg">
           <div class="trending__handle">@tegan</div>
           <div class="trending__description">World Peace Builder</div>
         </div>
         <div class="trending__profile">
-          <img class="trending__avatar" src="">
+          <img class="trending__avatar" src="images/avatar-3.jpg">
           <div class="trending__handle">@morgan</div>
           <div class="trending__description">Super Cool Project</div>
         </div>
         <div class="trending__profile">
-          <img class="trending__avatar" src="">
+          <img class="trending__avatar" src="images/avatar-4.jpg">
           <div class="trending__handle">@kendall</div>
           <div class="trending__description">Life Changing App</div>
         </div>
         <div class="trending__profile">
-          <img class="trending__avatar" src="">
+          <img class="trending__avatar" src="images/avatar-5.jpg">
           <div class="trending__handle">@alex</div>
           <div class="trending__description">No Traffic Maker</div>
         </div>
