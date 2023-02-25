@@ -3,4 +3,4 @@ Admin Dashboard project for The Odin Project. The purpose of this project was to
 
 I also took the opportunity to try out some better CSS organization by using BEM classes.
 
-And I also started to look into accessibility stuff including aria labels and semantic HTMl but it wasn't a whole-hearted effort due to this just being a mockup and me wanting to finish the meat of the project and move on to the next lessons.
+And I also started to look into accessibility stuff including aria labels and semantic HTML but it wasn't a whole-hearted effort due to this just being a mockup and me wanting to finish the meat of the project and move on to the next lessons.
