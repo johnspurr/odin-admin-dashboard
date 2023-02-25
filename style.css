@@ -74,6 +74,8 @@ h2 {
   grid-template-rows: min-content auto auto;
   padding-block: 24px;
   grid-gap: 24px;
+  
+  z-index: 2;
 }
 
 .search {
@@ -150,6 +152,8 @@ h2 {
   padding-inline: 48px;
   height: min-content;
   row-gap: 24px;
+  box-shadow: 2px 2px 4px var(--drop-shadow-color);
+  z-index: 1;
 }
 
 .header__top {
@@ -266,7 +270,7 @@ h2 {
   background-color: var(--primary-bg-color);
   padding: 24px;
   border-radius: 8px;
-  box-shadow: 4px 4px 6px rgb(206, 206, 206);
+  box-shadow: 2px 2px 4px var(--drop-shadow-color);
 }
 
 .announcement + .announcement {
