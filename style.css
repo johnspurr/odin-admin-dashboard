@@ -1,0 +1,24 @@
+.card__icon,
+.search__icon,
+.navigation__icon--small,
+.notifications__icon {
+  --size: 20px;
+
+  width: var(--size);
+  height: var(--size);
+}
+
+.navigation__icon--large {
+  --size: 40px;
+
+  width: var(--size);
+  height: var(--size);
+}
+
+.profile__avatar,
+.trending__avatar {
+  --size: 48px;
+
+  width: var(--size);
+  height: var(--size);
+}
